@@ -22,7 +22,7 @@ const formTypeToComponent: { [type in ShowForm]: () => JSX.Element } = {
   projects: ProjectsForm,
   skills: SkillsForm,
   custom: CustomForm,
-  profile:ProfileForm,
+  profile: ProfileForm,
 };
 
 export const ResumeForm = () => {

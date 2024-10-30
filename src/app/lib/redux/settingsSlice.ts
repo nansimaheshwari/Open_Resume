@@ -7,7 +7,7 @@ export interface Settings {
   fontSize: string;
   documentSize: string;
   formToShow: {
-    profile:boolean;
+    profile: boolean;
     workExperiences: boolean;
     educations: boolean;
     projects: boolean;
@@ -20,7 +20,7 @@ export interface Settings {
     projects: string;
     skills: string;
     custom: string;
-    profile:string;
+    profile: string;
   };
   formsOrder: ShowForm[];
   showBulletPoints: {
@@ -54,7 +54,7 @@ export const initialSettings: Settings = {
     projects: true,
     skills: true,
     custom: false,
-    profile:true,
+    profile: true,
   },
   formToHeading: {
     workExperiences: "WORK EXPERIENCE",
@@ -62,9 +62,16 @@ export const initialSettings: Settings = {
     projects: "PROJECT",
     skills: "SKILLS",
     custom: "CUSTOM SECTION",
-    profile:"PROFILE",
+    profile: "PROFILE",
   },
-  formsOrder: ["profile","workExperiences", "educations", "projects", "skills", "custom"],
+  formsOrder: [
+    "profile",
+    "workExperiences",
+    "educations",
+    "projects",
+    "skills",
+    "custom",
+  ],
   showBulletPoints: {
     educations: true,
     projects: true,

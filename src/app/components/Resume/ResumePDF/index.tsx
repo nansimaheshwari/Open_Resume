@@ -54,11 +54,11 @@ export const ResumePDF = ({
   const formTypeToComponent: { [type in ShowForm]: () => JSX.Element } = {
     profile: () => (
       <ResumePDFProfile
-              profile={profile}
-              themeColor={themeColor}
-              isPDF={isPDF}
-              heading={formToHeading["profile"]}
-            />
+        profile={profile}
+        themeColor={themeColor}
+        isPDF={isPDF}
+        heading={formToHeading["profile"]}
+      />
     ),
     workExperiences: () => (
       <ResumePDFWorkExperience

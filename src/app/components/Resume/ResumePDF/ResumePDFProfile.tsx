@@ -26,7 +26,11 @@ export const ResumePDFProfile = ({
   const iconProps = { email, phone, location, url };
 
   return (
-    <ResumePDFSection themeColor={themeColor} style={{ marginTop: spacing["4"] }} heading={heading}>
+    <ResumePDFSection
+      themeColor={themeColor}
+      style={{ marginTop: spacing["4"] }}
+      heading={heading}
+    >
       <ResumePDFText
         bold={true}
         themeColor={themeColor}
