@@ -15,16 +15,22 @@ export const ResumePDFProfile = ({
   profile,
   themeColor,
   isPDF,
+  heading,
 }: {
   profile: ResumeProfile;
   themeColor: string;
   isPDF: boolean;
+  heading: string;
 }) => {
   const { name, email, phone, url, summary, location } = profile;
   const iconProps = { email, phone, location, url };
 
   return (
-    <ResumePDFSection style={{ marginTop: spacing["4"] }}>
+    <ResumePDFSection
+      themeColor={themeColor}
+      style={{ marginTop: spacing["4"] }}
+      heading={heading}
+    >
       <ResumePDFText
         bold={true}
         themeColor={themeColor}
